@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import Footers from '../Footer/Footers';
 import Header from '../Header/Header';
 
 const Main = () => {
@@ -7,6 +8,7 @@ const Main = () => {
         <div>
             <Header></Header>
             <Outlet></Outlet>
+            <Footers></Footers>
         </div>
     );
 };
