@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Language from '../Language/Language';
+import { DataContext } from '../Main/Main';
 import './Topice.css'
 
 const Topice = () => {
-    const route = useLoaderData();
-    const data = route.data;
 
-    console.log(data);
-
-   
+    const data = useContext(DataContext)
+  
 
     return (
         <div className='container'>

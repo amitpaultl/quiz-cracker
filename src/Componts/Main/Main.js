@@ -1,15 +1,21 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { createContext } from 'react';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import Footers from '../Footer/Footers';
 import Header from '../Header/Header';
+export const DataContext = createContext([])
 
 const Main = () => {
+    const item = useLoaderData();
+    const round = item.data
     return (
-        <div>
-            <Header></Header>
-            <Outlet></Outlet>
-            <Footers></Footers>
-        </div>
+        
+            <DataContext.Provider value={round}>
+                <Header></Header>
+                <Outlet></Outlet>
+                <Footers></Footers>
+            </DataContext.Provider>
+
+       
     );
 };
 

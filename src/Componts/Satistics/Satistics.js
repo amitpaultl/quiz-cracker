@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Area, AreaChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { DataContext } from '../Main/Main';
 
 const Satistics = () => {
-    const route = useLoaderData();
-    const rechart = route.data
+    const rechart = useContext(DataContext)
     const { name, total } = rechart
-    console.log(rechart);
     return (
         <div className='container my-5'>
             <AreaChart width={400} height={400} data={rechart}>

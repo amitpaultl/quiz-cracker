@@ -7,7 +7,6 @@ import Satistics from './Componts/Satistics/Satistics';
 import Blog from './Componts/Blog/Blog';
 import Quize from './Componts/Quize/Quize';
 import Error from './Componts/Error/Error';
-import Chart from './Componts/Chart';
 
 
 function App() {
@@ -15,17 +14,16 @@ function App() {
     {
       path: "/",
       element: <Main></Main>,
+      loader:() => fetch('https://openapi.programming-hero.com/api/quiz'),
       errorElement:<Error></Error>,
       children:[
         {
           path: "/",
           element: <Topice></Topice>,
-          loader:() => fetch('https://openapi.programming-hero.com/api/quiz'),
         },
         {
           path: "/topice",
           element: <Topice></Topice>,
-          loader:() => fetch('https://openapi.programming-hero.com/api/quiz'),
            
         },
         {
@@ -36,17 +34,12 @@ function App() {
         },
         {
           path: "/satistics",
-          loader:() => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Satistics></Satistics>,
         },
         {
           path: "/blog",
           element: <Blog></Blog>,
-        },
-        {
-          path: "/chart",
-          element: <Chart></Chart>,
-        },
+        }
       ]
     },
 
