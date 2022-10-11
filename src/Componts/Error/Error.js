@@ -13,7 +13,7 @@ const Error = () => {
             <div className="error-area">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-12 ">
                             <div className="erroe-pag d-flex align-items-center">
                                 <div className="text-center w-100">
 

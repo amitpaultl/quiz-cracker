@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import Language from '../Language/Language';
 import { DataContext } from '../Main/Main';
 import './Topice.css'
@@ -15,12 +14,15 @@ const Topice = () => {
                 <img src="https://t4.ftcdn.net/jpg/02/78/37/47/360_F_278374738_ypRn0utOVnebuhmpSrDiwkzFsdqEm0aa.jpg" alt="" />
             </div>
             <div className="progming-langaus">
-                {
-                    data.map(language => <Language 
-                    key={language.id}
-                    language={language}
-                    ></Language>)
-                }
+                <div className="row">
+                    {
+                        data.map(language => <Language 
+                        key={language.id}
+                        language={language}
+                        ></Language>)
+                    }
+                </div>
+
             </div>
         </div>
     );

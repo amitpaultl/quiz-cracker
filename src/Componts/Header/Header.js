@@ -13,7 +13,7 @@ const Header = () => {
 
             <Navbar expand="lg">
                 <Container>
-                    <Link className='logo' href="#">Secret</Link>
+                    <Link className='logo' to={'/topice'}>Secret</Link>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -21,8 +21,6 @@ const Header = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-
-
                         </Nav>
                         <div className="d-flex menu">
                             <NavLink className={({isactive})=> isactive ? 'active': undefined} to='/topice'>Topice</NavLink>

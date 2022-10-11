@@ -3,9 +3,4 @@
     margin: 25px 0;
 }
 
-.progming-langaus{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin:  20px 0;
-}
+
