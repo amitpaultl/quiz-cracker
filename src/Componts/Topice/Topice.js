@@ -7,6 +7,9 @@ const Topice = () => {
     const route = useLoaderData();
     const data = route.data;
 
+
+   
+
     return (
         <div className='container'>
             <div className="hero-area">

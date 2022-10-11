@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -25,8 +25,9 @@ const Header = () => {
 
                         </Nav>
                         <div className="d-flex menu">
-                            <Link to='/topice'>Home</Link>
-                            <Link to='/topice'>Topice</Link>
+                            <NavLink className={({isactive})=> isactive ? 'active': undefined} to='/topice'>Topice</NavLink>
+                            <NavLink to='/satistics'>Statistics</NavLink>
+                            <NavLink to='/blog'>Blog</NavLink>
                         </div>
                     </Navbar.Collapse>
                 </Container>

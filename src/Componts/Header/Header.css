@@ -5,6 +5,10 @@
     color: cornflowerblue;
 }
 
+.active{
+    background-color: aqua;
+}
+
 .menu a{
     font-size: 20px;
     margin: 0 5px;
