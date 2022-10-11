@@ -1,10 +1,10 @@
 import React from 'react';
 import './Option.css'
-const Option = ({option, id,common, notify}) => {
+const Option = ({option, id,common, tost}) => {
     
     return (
-        <div onClick={()=>notify(option)} className='option-ans d-flex'>
-            <input type="radio" id={id+common} name={common} value={option}/>
+        <div  className='option-ans d-flex'>
+            <input onClick={()=>tost(option)} type="radio" id={id+common} name={common} value={option}/>
             <label htmlFor={id+common}>{option}</label>
             
         </div>

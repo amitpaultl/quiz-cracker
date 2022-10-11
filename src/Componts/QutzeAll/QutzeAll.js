@@ -6,9 +6,10 @@ import { toast, ToastContainer } from 'react-toastify';
 import './QutzeAll.css'
 import 'react-toastify/dist/ReactToastify.css';
 
-const QutzeAll = ({quezis}) => {
+const QutzeAll = ({quezis }) => {
     const  {question,options,correctAnswer, id} = quezis;
-    const notify = (text) => {
+   
+    const tost = (text) => {
         if(correctAnswer === text ){
            toast.success("You are Right!",{autoClose:1000})
             
@@ -33,7 +34,7 @@ const QutzeAll = ({quezis}) => {
                     option={option}
                     id={idx}
                     common={id}
-                    notify={notify}
+                    tost={tost}
                     ></Option>)
                 }
             </div>
