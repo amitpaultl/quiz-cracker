@@ -1,0 +1,15 @@
+.erroe-pag{
+    padding: 70px 0;
+}
+.error-area{
+    background-color: rgb(3, 3, 3);
+}
+.error{
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+.error-name i{
+    font-size: 20px;
+    color: #fff;
+}
