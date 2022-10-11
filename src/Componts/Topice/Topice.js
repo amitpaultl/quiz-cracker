@@ -7,6 +7,7 @@ const Topice = () => {
     const route = useLoaderData();
     const data = route.data;
 
+    console.log(data);
 
    
 

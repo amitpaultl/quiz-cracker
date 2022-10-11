@@ -5,7 +5,7 @@ import './Footers.css'
 
 const Footers = () => {
     return (
-        <div className='footer p-5 my-3'>
+        <div className='footer p-5 '>
             <div className="container">
 
                 <h2>ColorFull.com</h2>

@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Option from '../Option/Option';
 import { toast, ToastContainer } from 'react-toastify';
+import './QutzeAll.css'
 import 'react-toastify/dist/ReactToastify.css';
 
 const QutzeAll = ({quezis}) => {
@@ -20,9 +21,11 @@ const QutzeAll = ({quezis}) => {
         toast.success(correctAnswer,{autoClose:5000})
     }
     return (
-        <div>
+        <div className='queze-area'>
+            <div className="catagorey d-flex justify-content-between">
             <h4>{question}</h4>
-            <FontAwesomeIcon onClick={corraded}  icon={faCoffee}></FontAwesomeIcon>
+            <FontAwesomeIcon onClick={corraded}  icon={faEye}></FontAwesomeIcon>
+            </div>
             <div className="option-area">
                 {
                     options.map((option, idx) => <Option
