@@ -20,7 +20,7 @@ const Blog = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header><h3>how work react useref hook ?</h3> </Accordion.Header>
+                        <Accordion.Header><h3>How work react useref hook ?</h3> </Accordion.Header>
                         <Accordion.Body>
                         The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
                         </Accordion.Body>
