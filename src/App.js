@@ -8,6 +8,7 @@ import Blog from './Componts/Blog/Blog';
 import Quize from './Componts/Quize/Quize';
 import Error from './Componts/Error/Error';
 
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -47,6 +48,7 @@ function App() {
   ])
   return (
     <div>
+      
       <RouterProvider router={router} />
     </div>
   );

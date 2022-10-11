@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Option = ({option, id,common}) => {
+const Option = ({option, id,common, notify}) => {
+    
     return (
-        <div>
+        <div onClick={()=>notify(option)}>
             <input type="radio" id={id+common} name={common} value={option}/>
             <label htmlFor={id+common}>{option}</label>
             
