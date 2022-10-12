@@ -1,6 +1,29 @@
-.hero-area img{
+.hero-area {
+    background-image: url('https://t4.ftcdn.net/jpg/02/78/37/47/360_F_278374738_ypRn0utOVnebuhmpSrDiwkzFsdqEm0aa.jpg');
     width: 100%;
     margin: 25px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 10px;
 }
 
-
+.hero-area::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.362);
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}
+.hero-area h2{
+    font-size: 35px;
+}

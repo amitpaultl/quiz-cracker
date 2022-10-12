@@ -11,7 +11,8 @@ const Topice = () => {
     return (
         <div className='container'>
             <div className="hero-area">
-                <img src="https://t4.ftcdn.net/jpg/02/78/37/47/360_F_278374738_ypRn0utOVnebuhmpSrDiwkzFsdqEm0aa.jpg" alt="" />
+                <h2>My project name: Quiz tracker</h2>
+                <p>My project Work: Quiz option add, right wrong show in popup.</p>
             </div>
             <div className="progming-langaus">
                 <div className="row">

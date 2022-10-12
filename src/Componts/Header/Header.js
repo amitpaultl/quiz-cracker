@@ -23,7 +23,7 @@ const Header = () => {
                         >
                         </Nav>
                         <div className="d-flex menu">
-                            <NavLink className={({isactive})=> isactive ? 'active': undefined} to='/topice'>Topice</NavLink>
+                            <NavLink className={({isactive})=> isactive ? 'active': undefined} to='/topice'>Home</NavLink>
                             <NavLink to='/satistics'>Statistics</NavLink>
                             <NavLink to='/blog'>Blog</NavLink>
                         </div>
