@@ -6,15 +6,16 @@ import { toast, ToastContainer } from 'react-toastify';
 import './QutzeAll.css'
 import 'react-toastify/dist/ReactToastify.css';
 
-const QutzeAll = ({quezis }) => {
+const QutzeAll = ({quezis,setCount,setWrong }) => {
     const  {question,options,correctAnswer, id} = quezis;
    
     const tost = (text) => {
         if(correctAnswer === text ){
            toast.success("You are Right!",{autoClose:1000})
-            
+           setCount(privers => [...privers , 1])
         }else{
             toast.error("Your Ans false!",{autoClose:1000})
+            setWrong(count =>[...count, 1])
         }
         
     };
